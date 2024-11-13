@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="theme-dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CultuVivo</title>
+    <link rel="stylesheet" href="styles/bulma.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <div class="containerHeader">
+                <h1 class="title tituloPrincipal">
+                    CultuVivo
+                </h1>
+                <div class="menu">
+                    <ul class="nav">
+                        <div class="inicio">
+                            <li><a href="/CultuVivo/index.html">Inicio</a></li>
+                        </div>
+                        <div class="localidad">
+                            <li><a>Registros</a>
+                                <ul>
+                                    <li><a href="/CultuVivo/registroEvento.html">Registro Evento</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="experiencia">
+                            <li><a href="/CultuVivo/Paginas/experiencia/Experiencia.html">Experiencia</a></li>
+                        </div>
+                        <div class="estilo">
+                            <li><a>Estilo</a>
+                                <ul>
+                                    <li><a href="/CultuVivo/Paginas/Estilos/realismo.html">Realismo</a></li>
+                                    <li><a href="/CultuVivo/Paginas/Estilos/tradicional.html">Tradicional</a></li>
+                                    <li><a href="/CultuVivo/Paginas/Estilos/oriental.html">Oriental</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Además, el sistema debe poder registrar cada evento, incluyendo el nombre, la fecha y hora, el lugar, la capacidad máxima permitida de asistentes y los artistas que participarán. -->
+    <div class="containerBody">
+        <article>
+            <div class="mainContainer card" id="cardP">
+                <h1 class="title estiloPopular">Registro Eventos</h1> <br>
+                <div class="formulario">
+                    
+                    <form action="" method="GET">
+                      <fieldset>
+                          <legend class="title">Datos del evento:</legend> <br>
+                          <label for="nombre">Nombre del evento:</label>
+                          <input
+                          type="text"
+                          name="nombre"
+                          id="nombre"
+                          size="10"
+                          /> <br><br>
+                          <label for="fecha">Fecha:</label>
+                          <input type="date" name="fecha" id="fecha" value="2006-10-04" />
+                          <label for="hora">Hora:</label>
+                          <input type="time" name="hora" id="hora" value="20:30:00" />
+                          <br /><br />
+                          <label for="lugar">Lugar:</label>
+                          <input
+                          type="text"
+                        /> <br><br>
+                        <label for="capMax">Capacidad Máxima de asistentes:</label>
+                        <input
+                        type="text"
+                      />
+                      <br /><br />
+                      <label for="capMax">Número de artistas que participarán:</label>
+                        <input
+                        type="text"
+                      /> <br><br>
+                        
+                      <input type="submit" value="Enviar" />
+                      <input type="reset" value="Limpiar todo" />
+                
+                      <br /><br />
+                      
+                </div>
+                
+        </article>
+    </div>
+    <footer>
+        <div class="contact">
+            <h1 class="title" >Contáctanos:</h1>
+            <p class="subtitle contacto">Correo: CultuVivo@correo.com <br> WhatsApp: +57 300 123 6789 </p>
+        </div>
+    </footer>
+</body>
+
+</html>
