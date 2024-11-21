@@ -315,7 +315,7 @@ article {
 
   #card1:hover {
     transform: translateY(-1.3vw); /* Eleva la tarjeta ligeramente */
-    box-shadow: 0 20px 30px rgb(165, 165, 165); /* Sombra más fuerte al pasar el cursor */
+    box-shadow: 0 20px 30px #003a52; /* Sombra más fuerte al pasar el cursor */
     animation-name: animacion;
     animation-duration: 0.5s;
   }
