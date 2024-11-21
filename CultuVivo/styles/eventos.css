@@ -4,17 +4,20 @@
 
 
     
-    @font-face {
-        font-family: "Graffonti";
-        src: url(/InkMap/fonts/Graffonti.ttf);
+    @keyframes animacion {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-4.7%);
+        }
     }
     
     html {
-        background-color: #a1a1a1;
+        background-color: #404654;
         margin: 0;
         padding: 0;
         width: 100vw;
-        background-image: url(/InkMap/img/fondos/fondo-inicial.jpg);
     }
     
     body {
@@ -22,7 +25,7 @@
     }
     
     .card {
-        background-color: rgb(0, 119, 119);
+        background-color: #00b1b1;
     }
     
     .tituloPrincipal {
@@ -32,7 +35,7 @@
         margin-left: 12vw;
         width: 100vw;
         top: 1vw;
-        color: black;
+        color: white;
     }
     
     .header {
@@ -45,7 +48,7 @@
         position: relative;
         width: 100vw;
         height: 14vh;
-        background-color: cyan;
+        background-color: #93c0c0;
         display: flex;
         justify-content: left;
         align-items: center;
@@ -77,7 +80,7 @@
     }
     
     .nav li a {
-        background-color: cyan;
+        background-color: #93c0c0;
         color: black;
         text-decoration: none;
         padding: 10px 15px;
@@ -155,7 +158,9 @@
 
 .card:hover {
     transform: translateY(-1.3vw); /* Eleva la tarjeta ligeramente */
-    box-shadow: 0 20px 30px rgb(165, 165, 165); /* Sombra más fuerte al pasar el cursor */
+    box-shadow: 0 20px 30px #003a52; /* Sombra más fuerte al pasar el cursor */
+    animation-name: animacion;
+    animation-duration: 0.5s;
   }
 
 /* Estilo de la imagen */
@@ -292,4 +297,39 @@
         float: none;
         margin: 0;
     }
+    }
+
+    .chat-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: rgb(8, 221, 121);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1000;
+    }
+   
+    .chat-form {
+        display: none;
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        width: 300px;
+        background-color: rgb(8, 221, 121);
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1001;
+    }
+    #chat-toggle:checked ~ .chat-form {
+        display: block;
+    }
+    .chat-form .box {
+        padding: 1.25rem;
+        background-color: rgb(8, 221, 121);
+
     }
