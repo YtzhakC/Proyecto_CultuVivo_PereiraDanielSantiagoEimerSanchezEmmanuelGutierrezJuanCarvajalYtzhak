@@ -34,7 +34,7 @@ body {
 }
 
 .card {
-    background-color: rgb(0, 119, 119);
+    background-color: #00b1b1;
 }
 
 .tituloPrincipal {
@@ -44,7 +44,7 @@ body {
     margin-left: 12vw;
     width: 100vw;
     top: 1vw;
-    color: black;
+    color: white;
 }
 
 .header {
@@ -57,7 +57,7 @@ body {
     position: relative;
     width: 100vw;
     height: 14vh;
-    background-color: #d4ffff;
+    background-color: #93c0c0;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -89,7 +89,7 @@ ul, ol {
 }
 
 .nav li a {
-    background-color: cyan;
+    background-color: #93c0c0;
     color: black;
     text-decoration: none;
     padding: 10px 15px;
@@ -309,7 +309,7 @@ article {
   }
 
   #card1 {
-    outline: 2px solid darkcyan;
+    outline: 2px solid #008888;
     margin-left: 25vw;
   }
 
