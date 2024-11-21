@@ -27,7 +27,6 @@
                                 <ul>
                                     <li><a href="/CultuVivo/registroEvento.html">Registro Evento</a></li>
                                     <li><a href="/CultuVivo/registroAsistente.html">Registro Asistente</a></li>
-                                    <li><a href="/CultuVivo/registroArtista.html">Registro Artista</a></li>
                                 </ul>
                             </li>
                         </div>
@@ -39,51 +38,42 @@
             </div>
         </section>
     </header>
-    <!-- Además, el sistema debe poder registrar cada evento, incluyendo el nombre, la fecha y hora, el lugar, la capacidad máxima permitida de asistentes y los artistas que participarán. -->
+    <!-- El sistema debe poder registrar cada asistente proporcionando su identificación, nombre completo, correo electrónico, tipo de boleto y estado dentro del evento, como si está en espera, ha confirmado su asistencia, o incluso si se ha cancelado la reserva. -->
     <div class="containerBody">
         <article>
-            <div class="mainContainer card" id="cardP">
-                <h1 class="title estiloPopular">Registro Asistente</h1> <br>
-                <div class="formulario">
-                    
-                    <form action="" method="GET">
-                      <fieldset>
-                          <legend class="title">Datos del asistente:</legend> <br>
-                          <label for="nombre">Nombre del evento:</label>
-                          <input
-                          type="text"
-                          name="nombre"
-                          id="nombre"
-                          size="10"
-                          /> <br><br>
-                          <label for="fecha">Fecha:</label>
-                          <input type="date" name="fecha" id="fecha" value="2006-10-04" />
-                          <label for="hora">Hora:</label>
-                          <input type="time" name="hora" id="hora" value="20:30:00" />
-                          <br /><br />
-                          <label for="lugar">Lugar:</label>
-                          <input
-                          type="text"
-                        /> <br><br>
-                        <label for="capMax">Capacidad Máxima de asistentes:</label>
-                        <input
-                        type="text"
-                      />
-                      <br /><br />
-                      <label for="capMax">Número de artistas que participarán:</label>
-                        <input
-                        type="text"
-                      /> <br><br>
-                        
-                      <input type="submit" value="Enviar" />
-                      <input type="reset" value="Limpiar todo" />
-                
-                      <br /><br />
-                      
+            <div class="mainContainer card" id="cardP" class="is-centered">
+                <h1 class="title estiloPopular">Registro Asistente</h1><br>
+                <div class="formulario" class="is-centered">
+                    <form action="" method="GET" class="is-centered">
+                        <label for="id" class="has-text-white">Identificación</label><br>
+                        <input type="tel" name="identification" id="id" minlength="3" maxlength="50" autofocus required>    
+                        <br><br>
+                        <label for="nombre" class="has-text-white">Nombres y Apellidos</label><br>
+                        <input type="text" name="name" id="nombre" minlength="3" maxlength="50" required>
+                        <br><br>
+                        <label for="e-mail" class="has-text-white">Correo electrónico</label><br>
+                        <input type="email" name="email" id="e-mail" required>
+                        <br><br>
+                        <label for="ticket" class="has-text-white">Tipo de boleto</label>
+                        <br>
+                        <input type="radio" name="tiquetegen" id="ticket" class="has-text-white"> General
+                        <br>
+                        <input type="radio" name="tiquetevip" id="ticket" class="has-text-white"> VIP
+                        <br><br>
+                        <label for="status" class="has-text-white">Estado dentro del evento</label>
+                        <br>
+                        <input type="radio" name="waiting" id="status" class="has-text-white"> En Espera
+                        <br>
+                        <input type="radio" name="confirmed" id="status" class="has-text-white"> Asistencia confirmada
+                        <br>
+                        <input type="radio" name="cancelled" id="status" class="has-text-white"> Reserva cancelada
+                        <br><br>
+                        <input type="submit" value="Enviar"/>
+                        <input type="reset" value="Limpiar todo"/>
+                        <br><br>
+                    </form>
                 </div>
-                
         </article>
     </div>
 </body>
-
 </html>
