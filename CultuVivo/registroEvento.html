@@ -14,9 +14,7 @@
     <header>
         <section class="header">
             <div class="containerHeader">
-                <h1 class="title tituloPrincipal">
-                    CultuVivo
-                </h1>
+                <h1 class="title tituloPrincipal"> CultuVivo </h1>
                 <div class="menu">
                     <ul class="nav">
                         <div class="inicio">
@@ -39,6 +37,60 @@
         </section>
     </header>
     <!-- Además, el sistema debe poder registrar cada evento, incluyendo el nombre, la fecha y hora, el lugar, la capacidad máxima permitida de asistentes y los artistas que participarán. -->
+
+    <section class="section">
+        <div class="container">
+            <br><br><br><br><br><br>
+            <h1 class="title is-2 has-text-centered">Registro de Eventos</h1>
+            <div class="tabs is-centered">
+            </div>
+            <div class="box">
+                <form>
+                    <div class="field">
+                        <label class="label">Nombre del Evento</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Ingrese el nombre del evento" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Fecha y Hora</label>
+                        <div class="control">
+                            <input class="input" type="datetime-local" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Lugar</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Ingrese la ubicación del evento" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Capacidad Máxima de Asistentes</label>
+                        <div class="control">
+                            <input class="input" type="number" min="1" placeholder="Ingrese la capacidad máxima" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Cantidad de Artistas Participantes</label>
+                        <div class="control">
+                            <input class="input" type="number" min="1" placeholder="Ingrese la cantidad de artistas" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary is-fullwidth">Registrar Evento</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+=======
     <div class="containerBody">
         <article>
             <div class="mainContainer card" id="cardP">
@@ -128,6 +180,7 @@
             </form>
         </div>
     </div>
+
 
 </body>
 
