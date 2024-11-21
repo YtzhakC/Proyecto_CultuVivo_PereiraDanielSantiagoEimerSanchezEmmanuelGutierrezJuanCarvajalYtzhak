@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="theme-dark">
-
+    <img class="fondo" src="img/Events.jpg" alt="">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,18 +20,18 @@
                 <div class="menu">
                     <ul class="nav">
                         <div class="inicio">
-                            <li><a href="/CultuVivo/index.html">Inicio</a></li>
+                            <li><a href="./eventos.html">Inicio</a></li>
                         </div>
                         <div class="localidad">
                             <li><a>Registros</a>
                                 <ul>
-                                    <li><a href="/CultuVivo/registroEvento.html">Registro Evento</a></li>
-                                    <li><a href="/CultuVivo/registroAsistente.html">Registro Asistente</a></li>
+                                    <li><a href="./registroEvento.html">Registro Evento</a></li>
+                                    <li><a href="./registroAsistente.html">Registro Asistente</a></li>
                                 </ul>
                             </li>
                         </div>
                         <div class="inicio">
-                            <li><a href="/CultuVivo/eventos.html">Eventos</a></li>
+                            <li><a href="./eventos.html">Eventos</a></li>
                         </div>
                     </ul>
                 </div>
@@ -41,34 +41,46 @@
     <div class="containerBody">
         <article>
             <div class="mainContainer card " id="cardP">
+
                 <h1 class="title estiloPopular">CultuVivo</h1> <br>
                 <div class="card cards" id="card1">
-                    <a href="/CultuVivo/eventos.html">
+                    <a href="./eventos.html">
                         <div class="card-image">
-                            
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">Eventos</p>
-                                </div>
-                            </div>
-                            
-                            <div class="content">
-                                
-                            </div>
-                        </div>
-                        
-                    </div>
 
-                <br><br>
+                <h1 class="title estiloPopular">CultuVivo</h1> <br> <br>
+                <div class="botones">
+
+                    <div class="card cards" id="card1">
+                        <a href="/CultuVivo/eventos.html">
+                            <div class="card-image">
+                                
+                            </div> 
+
+                            
+                            
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Eventos</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="content">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div>
+                
+                <br><br><br>
                 <h1 class="title estiloPopular ">Registros</h1> <br><br>
                 <div class="botones">
 
                     <div class="card cards" id="card1">
-                        <a href="/CultuVivo/registroEvento.html">
+                        <a href="./registroEvento.html">
                             <div class="card-image">
                                 
                             </div>
@@ -87,15 +99,16 @@
                             </div>
                             
                         </div>
+                        <br><br>
                         <div class="card cards" id="card1">
-                            <a href="/CultuVivo/registroAsistente.html">
+                            <a href="./registroAsistente.html">
                                 <div class="card-image">
                                     
                                 </div>
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-left">
-                                        </div>
+                                    </div>
                                         <div class="media-content">
                                             <p class="title is-4">Registro Asistente</p>
                                         </div>
@@ -106,15 +119,65 @@
                                     </div>
                                 </div>
                                 
-                            </div>
+                        </div>
                 </div>
+
+                <br>
+
 
                 
                 
-                <br>
+                <br><br><br>
+
 
         </article>
     </div>
+
+    <input type="checkbox" id="chat-toggle" hidden>
+    <label for="chat-toggle" class="chat-button">
+        <img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="Chat icon">
+    </label>
+
+    <div class="chat-form">
+        <div class="box">
+            <form>
+                <div class="field">
+                    <label class="label has-text-white">Nombre</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Tu nombre" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label has-text-white">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Tu email" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label has-text-white">Número</label>
+                    <div class="control">
+                        <input class="input" type="tel" placeholder="Tu número de teléfono" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label has-text-white">Mensaje</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-fullwidth" type="submit" style="background-color: #1d5938; color: white; border-color: #471d59;">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
 
 </html>
