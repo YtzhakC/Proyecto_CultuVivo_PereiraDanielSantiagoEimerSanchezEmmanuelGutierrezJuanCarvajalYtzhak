@@ -1,20 +1,16 @@
-/* * {
-    outline: solid 1px black;
-    } */
-
-
-    
 @font-face {
     font-family: "Graffonti";
     src: url(/InkMap/fonts/Graffonti.ttf);
 }
 
 html {
-    background-color: #a1a1a1;
+    /*background-color: #a1a1a1;*/
     margin: 0;
     padding: 0;
     width: 100vw;
-    background-image: url(/InkMap/img/fondos/fondo-inicial.jpg);
+    background-image: url(/img/Estadio.jpeg);
+    opacity: 0.8;
+    
 }
 
 body {
@@ -33,6 +29,7 @@ body {
     width: 100vw;
     top: 1vw;
     color: black;
+    
 }
 
 .header {
@@ -108,10 +105,10 @@ ul, ol {
 .containerBody {
     position: relative;
     display: flex;
-    /* border: 2px solid black; */
-    height: 80vh;
-    top: 14vh;
+    height: 75vh;
+    top: 15vh;
     align-items: center;
+    justify-content: center;
 }
 
 article {
