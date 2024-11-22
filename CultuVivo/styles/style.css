@@ -11,16 +11,6 @@ html {
     width: 100vw;
     background-image: url(/img/Estadio.jpeg);
     opacity: 0.8;
-    
-=======
-/* * {
-    outline: solid 1px black;
-    } */
-
-html {
-    margin: 0;
-    padding: 0;
-    width: 100vw; 
 }
 
 .fondo {
@@ -46,7 +36,7 @@ html {
 
 body {
     background-color: black;
-    height: 100vh;
+    height: 200vh;
 }
 
 .card {
