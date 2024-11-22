@@ -185,6 +185,7 @@ article {
 
 #cardP {
     width: 95%;
+    left: -13vw;
 }
 .estiloMasPopular {
     display: flex;
