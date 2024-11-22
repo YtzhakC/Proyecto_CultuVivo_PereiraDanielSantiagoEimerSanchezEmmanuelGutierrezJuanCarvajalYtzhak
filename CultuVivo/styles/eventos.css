@@ -204,7 +204,7 @@
 @media (max-width: 768px){
 
     html {	
-    height: 410vh;
+    height: 330vh;
     }
        
     .tituloPrincipal {
@@ -212,26 +212,13 @@
     width: 160vw;
     }
     
-    #logotipo {
-    height: 12vw;
-    left: 8vw;
-    }
-    
-    aside {
-    width: 91vw;
-    height: 22vh;
-    top: 59.5vh;
-    z-index: 10;
-    }
-    
-    .cards {
-    flex-direction: column;
-    }
-    
     .card {
-    width: 85%;
-    left: -0vw;
+        margin-left: 2vw;
+        width: 30%;
+        top: -1.5vw;
     }
+    
+    
     
     .Bga {
     right: 8vw;
@@ -248,7 +235,7 @@
     .nav {
         display: none;
         position: absolute;
-        background-color: #4e0000;
+        background-color: #93c0c0;
         top: 10vh;
         right: 15vw;
         width: 100vw;
@@ -263,7 +250,7 @@
         font-size: 24px;
         color: #fff;
         padding: 10px 20px;
-        background-color: #4e0000;
+        background-color: #93c0c0;
         display: inline-block;
         cursor: pointer;
     }
@@ -290,7 +277,7 @@
     .nav li ul {
         position: static;
         min-width: 100%;
-        background-color: #4e0000;
+        background-color: #93c0c0;
     }
     
     .nav li:hover ul {

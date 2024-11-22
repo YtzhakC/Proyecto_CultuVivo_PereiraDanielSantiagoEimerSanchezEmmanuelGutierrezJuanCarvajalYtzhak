@@ -36,7 +36,7 @@ html {
 
 body {
     background-color: black;
-    height: 200vh;
+    height: 100vh;
 }
 
 .card {
@@ -356,34 +356,25 @@ article {
 
 @media (max-width: 768px){
 
-    html {	
-    height: 500vh;
-    }
        
     .tituloPrincipal {
     font-size: clamp(30px, 10vw, 12vw);
     width: 160vw;
     }
     
-    #logotipo {
-    height: 12vw;
-    left: 8vw;
-    }
-    
-    aside {
-    width: 91vw;
-    height: 22vh;
-    top: 59.5vh;
-    z-index: 10;
+
+    #cardP {
+        position: relative;
+        left: -4vw;
     }
 
     .card {
     width: 85%;
-    left: -0vw;
+    left: 3vw;
     }
 
     .cards {
-        width: 96%;
+        width: 40%;
     }
 
     
@@ -414,7 +405,7 @@ article {
     .nav {
         display: none;
         position: absolute;
-        background-color: cyan;
+        background-color: #93c0c0;
         top: 10vh;
         right: 15vw;
         width: 100vw;
@@ -429,7 +420,7 @@ article {
         font-size: 24px;
         color: #fff;
         padding: 10px 20px;
-        background-color: cyan;
+        background-color: #93c0c0;
         display: inline-block;
         cursor: pointer;
     }
@@ -456,7 +447,7 @@ article {
     .nav li ul {
         position: static;
         min-width: 100%;
-        background-color: cyan;
+        background-color: #93c0c0;
     }
     
     .nav li:hover ul {
